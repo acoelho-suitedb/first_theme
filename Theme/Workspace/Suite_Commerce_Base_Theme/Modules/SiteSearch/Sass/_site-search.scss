@@ -73,3 +73,15 @@
 
 	cursor: pointer;
 }
+
+
+
+.site-search-content::before {
+
+	display: none!important;
+}
+
+.site-search-content::after {
+
+	display: none!important;
+}
