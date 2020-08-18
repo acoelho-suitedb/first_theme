@@ -2,6 +2,12 @@
   @extend .container;
 }
 
+#home-page{
+
+  background-image: url(getThemeAssetsPath('img/img_home.jpg'));
+}
+
+
 .home-banner-top-message {
   @extend .message-info;
   @extend .message-large;

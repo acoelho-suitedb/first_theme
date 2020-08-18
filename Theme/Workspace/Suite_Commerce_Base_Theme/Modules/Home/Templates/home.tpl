@@ -7,11 +7,12 @@
 		</p>-->
 
 
-		<!-- consultar mañana si esto se tiene que pasar por el backend de netsuite o algo 
+		<!-- consultar mañana si esto se tiene que pasar por el backend de netsuite o algo -->
 
-		<img src="{{getThemeAssetsPath (resizeImage 'img/img_home.jpg' ../imageHomeSize)}}" alt="" />
+		<img src="{{getThemeAssetsPathWithDefault  'img/img_home.jpg' }}" alt="" />
 
-		-->
+		
+
 	</div>
 
 	<div data-cms-area="home_cms_area_2" data-cms-area-filters="path"></div>
