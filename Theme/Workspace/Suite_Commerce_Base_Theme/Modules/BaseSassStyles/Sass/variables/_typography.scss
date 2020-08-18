@@ -29,8 +29,13 @@ $sc-font-size-xl: 1.2rem;
 $sc-font-size-xxl: 1.47rem;
 $sc-font-size-xxxl: 1.73rem;
 
+//Import font-family
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
 // Font family
-$sc-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sc-font-family: "Open Sans", sans-serif;
 
 // Font weight
 $sc-font-weight-light: 300;
