@@ -131,8 +131,9 @@ input.nav-search-input {
     border-radius:0px;
     border:0px;
     background: $sc-color-theme-700;
-    color: $sc-neutral-shade-0;
-    padding: $sc-padding-lv3;
+    //color: $sc-neutral-shade-0;
+    color: white;
+    //padding: $sc-padding-lv3;
     float:right;
     visibility: hidden;
     position: absolute;
@@ -144,8 +145,9 @@ input.nav-search-input {
     }
 
     &:hover, &:focus {
-        background: $sc-button-secondary-hover-background-color;
-        color: $sc-neutral-shade-0;
+     //   background: $sc-button-secondary-hover-background-color;
+     //   color: $sc-neutral-shade-0;
+     color: white;
     }
 }
 

@@ -29,8 +29,10 @@
 //header maxi menu
 
 .header-menu-level1 {
-	margin-left: - ($sc-padding-lv2);
+	//margin-left: - ($sc-padding-lv2);
+    margin: 0 auto;
 	position: relative;
+	display: table;
 }
 
 .header-menu-level1 > li {
@@ -45,8 +47,8 @@
 	margin-right: $sc-main-navigation-link-margin-right;
 
 	color: $sc-main-navigation-link-color;
-    background-color: $sc-main-navigation-link-background-color;
-    font-weight: $sc-font-weight-semibold;
+    //background-color: $sc-main-navigation-link-background-color;
+    font-weight: $sc-font-weight-bold;
     text-transform: $sc-main-navigation-link-text-transform;
     letter-spacing: $sc-main-navigation-link-letter-spacing;
 
@@ -55,7 +57,7 @@
 
 	border-top-width: $sc-main-navigation-link-border-top-width;
 	padding-top: ($sc-padding-lv2) - ($sc-main-navigation-link-border-top-width);
-
+	font-size: $sc-font-size-xxs;
 	border-bottom-width: $sc-main-navigation-link-border-bottom-width;
 	padding-bottom: ($sc-padding-lv2) - ($sc-main-navigation-link-border-bottom-width);
 	line-height: 34px;
@@ -191,4 +193,12 @@
 	border-left: 6px solid transparent;
 	content: '';
 	z-index: 9999;
+}
+
+.header-form-search{
+	
+    display: table;
+    width: 20%;
+    float: right;
+	
 }

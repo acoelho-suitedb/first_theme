@@ -26,10 +26,28 @@
                         {{/if}}
                     </div>
                 </li>
-                {{/if}}
-                <li data-view="StoreLocatorHeaderLink"></li>
-                <li data-view="RequestQuoteWizardHeaderLink"></li>
-                <li data-view="QuickOrderHeaderLink"></li>
+				{{/if}}
+				<div class="header-menu-profile" data-view="Header.Profile"></div>
+
+				<div class="header-menu-store col-lg-5">
+                	<li data-view="StoreLocatorHeaderLink"></li>
+                	<li data-view="RequestQuoteWizardHeaderLink"></li>
+					<li data-view="QuickOrderHeaderLink"></li>
+				</div>
+				
+				<div class="header-right-menu">
+				{{#unless isStandalone}}
+				<div class="header-menu-locator-mobile" data-view="StoreLocatorHeaderLink"></div>
+				<div class="header-menu-searchmobile" data-view="SiteSearch.Button"></div>
+				<div class="header-menu-cart">
+					<div class="header-menu-cart-dropdown" >
+						<div data-view="Header.MiniCart">
+						
+						</div>
+					</div>
+				</div>
+				{{/unless}}
+			</div>
             </ul>
 		</div>
 	</div>
@@ -46,29 +64,20 @@
 			<div class="header-logo-wrapper">
 				<div data-view="Header.Logo"></div>
 			</div>
-			<div class="header-right-menu">
-				<div class="header-menu-profile" data-view="Header.Profile"></div>
-				{{#unless isStandalone}}
-				<div class="header-menu-locator-mobile" data-view="StoreLocatorHeaderLink"></div>
-				<div class="header-menu-searchmobile" data-view="SiteSearch.Button"></div>
-				<div class="header-menu-cart">
-					<div class="header-menu-cart-dropdown" >
-						<div data-view="Header.MiniCart"></div>
-					</div>
-				</div>
-				{{/unless}}
-			</div>
+
+				
+			<div class="header-secondary-wrapper{{#if isStandalone}} header-secondary-wrapper-standalone{{/if}}" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar"></div>
+			<!-- {{#unless isStandalone}}
+			<div data-view="SiteSearch"></div>
+			{{/unless}} -->
+	
 		</div>
 		<div id="banner-header-bottom" class="content-banner banner-header-bottom" data-cms-area="header_banner_bottom" data-cms-area-filters="global"></div>
 	</nav>
-
 </div>
 
 <div class="header-sidebar-overlay" data-action="header-sidebar-hide"></div>
-<div class="header-secondary-wrapper{{#if isStandalone}} header-secondary-wrapper-standalone{{/if}}" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar"></div>
-{{#unless isStandalone}}
-<div data-view="SiteSearch"></div>
-{{/unless}}
+
 
 
 {{!----

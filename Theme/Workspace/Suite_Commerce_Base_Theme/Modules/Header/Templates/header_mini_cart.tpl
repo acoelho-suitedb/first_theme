@@ -1,8 +1,11 @@
 <a class="header-mini-cart-menu-cart-link {{#if showLines}}header-mini-cart-menu-cart-link-enabled{{/if}}" data-type="mini-cart" title="{{translate 'Cart'}}" data-touchpoint="{{cartTouchPoint}}" data-hashtag="#cart" href="#">
 	<i class="header-mini-cart-menu-cart-icon"></i>
 	<span class="header-mini-cart-menu-cart-legend">
+		My cart:
+
 		{{#if isLoading}}
 		<span class="header-mini-cart-summary-cart-ellipsis"></span>
+		
 		{{else}}
 				{{translate '$(0)' itemsInCart}}
 		{{/if}}
