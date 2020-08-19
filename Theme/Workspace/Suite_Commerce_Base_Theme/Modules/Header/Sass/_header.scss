@@ -23,8 +23,9 @@ $sc-sidebar-size: 246px;
 .header-main-wrapper {
 	position: relative;
 	//background-color: $sc-header-background-color;
-	background-color: black;
+    background-color: rgba(2, 2, 2, 0.3);
 	box-shadow: none;
+	z-index: 99;
 
 	&.header-main-wrapper-standalone {
 		background: $sc-top-menu-background-color;
@@ -47,6 +48,7 @@ $sc-sidebar-size: 246px;
 	//@extend .container;
 	min-height: $sc-main-nav-height;
 	margin: inherit;
+	background-color: black;
 
 	a , button {
 		i {
@@ -373,7 +375,6 @@ $sc-sidebar-size: 246px;
 }
 
 .header-subheader {
-	background: rgba(56, 56, 56, 0.4);
 	display: none;
 	text-align: right;
 	font-size: $sc-font-size-xxs;

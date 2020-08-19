@@ -9,7 +9,7 @@
 
 		<!-- consultar mañana si esto se tiene que pasar por el backend de netsuite o algo -->
 
-		<img src="{{getThemeAssetsPathWithDefault  'img/img_home.jpg' }}" alt="" />
+		<img src="{{getThemeAssetsPath  'img/img_home.jpg' }}" alt="" />
 
 		
 
