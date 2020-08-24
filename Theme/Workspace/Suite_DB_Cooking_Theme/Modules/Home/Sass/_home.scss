@@ -122,16 +122,11 @@ $sc-image-slider-max-width-mobile: 767px;
 
 .home-image-slider .bx-pager {
   @media (min-width: $screen-md-min) {
-    width: 940px;
+    width: 100%;
     position: absolute !important;
     bottom: $sc-margin-lv4;
     text-align: center;
     // for bigger screens left: 25vw;
-    left: 7vw;
-
-  }
-  @media (min-width: $screen-lg-min) {
-    width: 1140px;
   }
 }
 // end bx-slider specifics
@@ -424,8 +419,38 @@ $sc-image-slider-max-width-mobile: 767px;
 
 }
 
-.featured_product{
+.cms_featured{
 
-  height: 90vh;
+  background: #ffffff;
+  padding: 2%;
+  display: table;
+  width: 100%;
+
+  h2{
+
+    text-align: center;
+    color: #e23200;
+  }
+
 }
 
+.featuredproductcct-layout{
+
+  width: 24%!important;
+  float: left;
+
+  .row{
+
+    .image-container{
+
+      width: 100%;
+    }
+
+    div{
+
+      width: 100%;
+    }
+
+  }
+
+}

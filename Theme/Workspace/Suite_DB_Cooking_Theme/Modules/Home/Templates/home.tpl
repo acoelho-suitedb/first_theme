@@ -157,14 +157,20 @@
 </div>	
 
 
-	<!-- #comment_in_dev: here it goes the CMS featured product. Maybe I shall fetch it to get it. -->
 
-	<div data-cms-area="home_cms_area_4" data-cms-area-filters="path" >
-	
+	<div class="cms_featured">
+		<h2>OUR BEST PRODUCTS</h2>
+		<div data-cms-area="home_cms_area_4" data-cms-area-filters="path">
+		
+		</div>
 	</div>
 
-	<div class="featured_product">
-	</div>
+	{{#each bottomBannerImages}}
+
+		<img src="{{this }}" />
+
+	{{/each}}
+
 
 	<!-- <div class="home-merchandizing-zone">
 		<div data-id="your-merchandising-zone" data-type="merchandising-zone"></div>
