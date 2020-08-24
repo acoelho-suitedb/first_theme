@@ -1,3 +1,5 @@
+{{log this}}
+
 <div class="home">
 	<div data-cms-area="home_cms_area_1" data-cms-area-filters="path"></div>
 
@@ -6,10 +8,7 @@
 		{{translate 'Use promo code <strong>SCADEMO</strong> for <strong>30%</strong> off your purchase'}} 
 		</p>-->
 
-
-		<!-- consultar mañana si esto se tiene que pasar por el backend de netsuite o algo -->
-
-		<img src="{{getThemeAssetsPath  'img/img_home.jpg' }}" alt="" />
+		<!-- <img src="{{getThemeAssetsPath  'img/img_home.jpg' }}" alt="" /> -->
 
 		
 
@@ -21,7 +20,7 @@
 		<div class="home-image-slider">
 			<ul data-slider class="home-image-slider-list">
 				{{#each carouselImages}}
-					<li>
+					<!-- <li>
 						<div class="home-slide-main-container">
 							<div class="home-slide-image-container">
 								<img src="{{resizeImage this ../imageHomeSize}}" alt="" />
@@ -32,10 +31,12 @@
 								<p>Example descriptive text displayed on multiple lines.</p>
 								<div class="home-slide-caption-button-container">
 									<a href="/search" class="home-slide-caption-button">Shop Now</a>
-								</div>
+								</div> 
 							</div>
 						</div>
-					</li>
+					</li>-->
+
+					<iframe style="width: 100vw; height: 100vh;" src="{{this}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				{{else}}
 				<li>
 					<div class="home-slide-main-container">
@@ -89,7 +90,7 @@
 
 	<div data-cms-area="home_cms_area_3" data-cms-area-filters="path"></div>
 
-	<div class="home-banner-main">
+<!--<div class="home-banner-main">
 	{{#each bottomBannerImages}}
     	<div class="home-banner-main-cell-nth{{@index}}">
     		<div class="home-banner-main-cell-bg">
@@ -117,13 +118,58 @@
         	</div>
       	</div>
     {{/each}}
+	</div> -->
+
+	<!-- #comment_in_dev: pass this via CMS, first make it hardcoded -->
+
+<div class="highlighted_prods">
+	<div class="first_prod_highligthed">
+
+		<img src="{{getThemeAssetsPath 'img/knives.png'}}" alt="" />
+			<div class="text-highlight">
+				<h3>LOREM IPSUM</h3>
+				<button>GO!</button>
+			</div>
 	</div>
 
-	<div data-cms-area="home_cms_area_4" data-cms-area-filters="path"></div>
+	<div class="second_prod_highligthed">
 
-	<div class="home-merchandizing-zone">
+		<img src="{{getThemeAssetsPath 'img/kit_accessories.png'}}" alt="" />
+
+		<div class="text-highlight">
+			<h3>LOREM IPSUM</h3>
+			<button>GO!</button>
+		</div>
+
+	</div>
+
+
+	<div class="third_prod_highligthed">
+
+		<img src="{{getThemeAssetsPath 'img/kitchen_totally.png'}}" alt="" />
+
+		<div class="text-highlight">
+			<h3>LOREM IPSUM</h3>
+			<button>GO!</button>
+		</div>
+
+	</div>
+</div>	
+
+
+	<!-- #comment_in_dev: here it goes the CMS featured product. Maybe I shall fetch it to get it. -->
+
+	<div data-cms-area="home_cms_area_4" data-cms-area-filters="path" >
+	
+	</div>
+
+	<div class="featured_product">
+	</div>
+
+	<!-- <div class="home-merchandizing-zone">
 		<div data-id="your-merchandising-zone" data-type="merchandising-zone"></div>
-	</div>
+	</div> -->
+
 </div>
 
 {{!----
