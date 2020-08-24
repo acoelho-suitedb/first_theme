@@ -1,7 +1,7 @@
 {
-    "name": "Suite_Commerce_Base_Theme",
-    "fantasyName": "SuiteCommerce Base Theme",
-    "vendor": "SuiteCommerce",
+    "name": "Suite_DB_Cooking_Theme",
+    "fantasyName": "Suite_DB_Cooking_Theme",
+    "vendor": "SuiteDB",
     "version": "20.1.0",
     "type": "theme",
     "target": "SCA,SCS",
@@ -9,6 +9,7 @@
         "SCA": ">=20.1.0",
         "SCS": ">=20.1.0"
     },
+    "description": "Cooking Theme made by Suite DB",
     "override": [],
     "skins": [
         {
@@ -1340,5 +1341,5 @@
             }
         }
     },
-    "local_folder": "Workspace\\Suite_Commerce_Base_Theme"
+    "local_folder": "Workspace\\Suite_DB_Cooking_Theme"
 }
